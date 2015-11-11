@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+/* FONTS ONLY */
+body {
+  font-family: 'Special Elite', sans-serif;
+}
+/* SPLASH */
+body {
+  color: #666;
+  padding-top: 3em;
+  font-weight: 400;
+  font-size: 1vw;
+}
+
+h1 { font-size: 10vw }
+h2 { font-size: 1.5vw }
+
+h3 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.2vw;
+  text-decoration: underline;
+}
+
+h1,
+h2 { font-weight: 700 }
+
+h1,
+h3,
+footer { text-align: center }
+
+ul {
+  padding-left: 2em;
+  list-style: circle;
+}
+
+a,
+a:hover {
+  color:#999;
+  text-decoration: underline;
+}
+
+footer {
+  display: block;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
