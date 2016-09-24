@@ -4,166 +4,350 @@
   <title>MURPS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base target="_new">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <style>
+    body {
+      color: #666;
+      background-color: #eee;
+    }
+
+    h1 { font-size: 13em; }
+    h2 { font-size: 2em; }
+    h1, h2 { text-transform: uppercase; }
+    h3 {
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+
+    .threedee {
+      color:#fff;
+      text-shadow: 0 1px 0 #ccc,
+                   0 2px 0 #c9c9c9,
+                   0 3px 0 #bbb,
+                   0 4px 0 #b9b9b9,
+                   0 5px 0 #aaa,
+                   0 6px 1px rgba(0,0,0,.1),
+                   0 0 5px rgba(0,0,0,.1),
+                   0 1px 3px rgba(0,0,0,.3),
+                   0 3px 5px rgba(0,0,0,.2),
+                   0 5px 10px rgba(0,0,0,.25),
+                   0 10px 10px rgba(0,0,0,.2),
+                   0 20px 20px rgba(0,0,0,.15);
+      margin-bottom:0;
+    }
+
+    .embossed {
+      color: #fff;
+      text-shadow: 0 -2px 0 #ccc,
+                   0 -1px 5px #c9c9c9;
+    }
+
+    .content h4 {
+      text-transform: uppercase;
+    }
+
+    .content ol,
+    .content ul {
+      padding-left: 1.2em;
+    }
+
+    .dice {
+      margin-top: -.48em;
+      margin-bottom: -.2em;
+      font-size: 6em;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 4em;
+      margin-bottom: 2em;
+    }
+
+    footer .disclaimer {
+      margin-bottom: 2em;
+    }
+
+    footer small a {
+      font-weight: bold;
+    }
+
+    footer a {
+      color: inherit;
+      text-decoration: inherit;
+      transition-duration: 1s;
+    }
+
+    footer a:hover {
+      color: inherit;
+      opacity: .6;
+      text-decoration: inherit;
+    }
+  </style>
 </head>
 <body>
-  <div class="login container">
-    <h1>MURPS</h1>
-    <div class="row">
-      <div class="col-sm-6 col-md-3">
-        <h2>Minimalist</h2>
-        <p>Our goal is to provide an intuitive and elegant core system that you read once and never have need to refer to again.</p>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <h2>Universal</h2>
-        <p>By focusing on chance and organizational mechanics, our system is not biased toward a particular setting or genre.</p>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <h2>Role-Playing</h2>
-        <p>The most memorable moments of table top gaming happen during great role playing and MURPS is designed to incentivize that.</p>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <h2>System</h2>
-        <p>MURPS core is designed to be a solid foundation to build upon and extend as-needed by your group's gaming style and setting.</p>
-      </div>
-    </div>
-    <h3>Equipment</h3>
-    <div class="row">
-      <div class="col-sm-6">
-        <h2>Six-sided dice</h2>
-        <p>Plain 'ol six-sided die that you'd find in many existing board games will do just fine. A single die will suffice, though three per person is recommended.</p>
-      </div>
-      <div class="col-sm-6">
-        <h2>Pencil &amp; Paper</h2>
-        <p>Not a single seasoned adventurer would rely solely on their mind to keep track of important events and details. Why should you?</p>
-      </div>
-    </div>
-    <h3>Roles</h3>
-    <div class="row">
-      <div class="col-sm-6">
-        <h2>Narrator</h2>
-        <p>A person identified to keep the story progressing. He or she has the final say in all disputes. The narrator role-plays any character outside of the adventure party.</p>
-      </div>
-      <div class="col-sm-6">
-        <h2>Players</h2>
-        <p>Anyone that is role playing a character (or characters) in the adventure party. For best results, remember to make decisions and act based on your character's traits and knowledge instead of your own.</p>
-      </div>
-    </div>
-    <h3>Core Mechanics</h3>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Characters</h2>
-        <p>Characters should be just as dynamic as people you might come across in real life. Therefore, not all characters are going to have memorable traits in every category of a cookie-cutter character sheet. The Narrator and Players should determine what's most important about the characters they are role playing.</p>
-        <p>The following categories and questions will help you flesh out your character:</p>
-        <ul>
-          <li><strong>Goals</strong> - What are some of your characters short or long term desires</li>
-          <li><strong>Occupation</strong> - What is the everday context in which your character uses their skills</li>
-          <li><strong>Secrets</strong> - What is your character hiding from the rest of the party?</li>
-          <li><strong>Physical</strong> - What would other characters notice at first glance?</li>
-          <li><strong>Emotional</strong> - How does your character react to different situations?</li>
-          <li><strong>Lineage</strong> - How might your characters family history affect their life?</li>
-        </ul>
-        <p>Any notable equipment a character has should be recorded with their traits as well.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Chance</h2>
-        <p>For any action that has a consequence (as determined by the Narrator) you roll a die (or dice) to determine the outcome. First, discuss the situational advantages and disadvantages that would affect the likelihood of success for the task at hand.</p>
-        <p>Once the Narrator accepts the current list of advantages and disadvantages, the difference between the two lists determines the number of dice to add to the roll. Whichever list had the most items, determines the type of roll (a tie results in a roll with a single die):</p>
-        <ul>
-          <li><strong>Advantage</strong> - Roll X die and use the "best" roll</li>
-          <li><strong>Disadvantage</strong> - Roll X die and use the "worst" roll</li>
-        </ul>
-        <p>All success roles are "better" than failure rolls:</p>
-      </div>
-      <div class="col-md-6">
-        <p><strong>Success</strong></p>
-        <ul>
-          <li><strong>6</strong> Critical - You succeed <strong>and</strong> then some</li>
-          <li><strong>4</strong> Normal - You succeed</li>
-          <li><strong>2</strong> Marginal - You succeed <strong>but</strong> with complications</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <p><strong>Failure</strong></p>
-        <ul>
-          <li><strong>5</strong> Marginal - You fail <strong>but</strong> not all is lost</li>
-          <li><strong>3</strong> Normal - You fail</li>
-          <li><strong>1</strong> Critical - You fail <strong>and</strong> then some</li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Six-degrees of State</h2>
-        <p>All measurements and statuses should be abstracted into six functional degrees of state (similar to the chance rolls). This streamlines gameplay and allows the Narrator to randomize state, as-needed.</p>
-        <p>Examples:</p>
+  <header class="text-center">
+    <h1 class="threedee">
+      MURPS
+    </h1>
+    <h2 class="embossed">
+      Minimalist Universal Roleplaying System
+    </h2>
+  </header>
+  <div class="content container">
+      <h3 class="text-center">What you will need</h3>
+      <div class="col-md-3">
+        <h4>Players</h4>
+        <p>Any group of willing people looking to embark on an epic journey through creative storytelling. First-timers welcome.</p>
       </div>
       <div class="col-md-3">
-        <p><strong>Health</strong></p>
+        <h4>Narrator</h4>
+        <p>Someone to help guide and progress the story. They also resolve any disputes, and roleplay all the non-player characters.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Six-sided dice</h4>
+        <p>Cubes are the most abundant platonic solids around. Scavenge them from other games or pick some up from a local game shop.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Pencil &amp; Paper</h4>
+        <p>Even the most seasoned adventurers know you can't keep track of all the important details in your head. Why should you?</p>
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="text-center">Player Characters</h3>
+      <div class="col-md-3">
+        <h4>Name</h4>
+        <p>From personality to ancestry, a name can say a lot about a character. Try to embed your character's tone into their name.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Background</h4>
+        <p>What life experiences shaped your character? Describe any events that led them to their current state. Where are they headed?</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Skills</h4>
+        <p>Describe your character in three sentences, each outlining a skill. Make one heroic and either two Novice <em>or</em> one Veteran and one Inept</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Proficiency</h4>
+        <p>Skills are given a degree of proficiency to determine the type of skill check needed in order to complete tasks at varying levels of dificulty.</p>
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="text-center">Skill Checks</h3>
+      <div class="col-md-3">
+        <h4>Degrees of Proficiency</h4>
+        <ol>
+          <li><strong>Inept</strong>&mdash; trouble with fundamental concepts</li>
+          <li><strong>Novice</strong>&mdash; most common among general population</li>
+          <li><strong>Veteran</strong>&mdash; established career</li>
+          <li><strong>Heroic</strong>&mdash; proven among peers</li>
+          <li><strong>Master</strong>&mdash; the best around</li>
+          <li><strong>Legendary</strong>&mdash; unheard of abilities</li>
+        </ol>
+      </div>
+      <div class="col-md-3">
+        <h4>Degrees of Difficulty</h4>
+        <ol>
+          <li><strong>Easy</strong>&mdash; simple task</li>
+          <li><strong>Normal</strong>&mdash; basic complexity</li>
+          <li><strong>Challenging</strong>&mdash; increased complexity</li>
+          <li><strong>Hard</strong>&mdash; too complex for most people</li>
+          <li><strong>Rigorous</strong>&mdash; extreme focus and attention required to accomplish</li>
+          <li><strong>Near Impossible</strong>&mdash; nearing the limit of comprehension</li>
+        </ol>
+      </div>
+      <div class="col-md-3">
+        <h4>Check Types</h4>
+        <ol>
+          <li><strong>Automatic Failure</strong></li>
+          <li><strong>1d6</strong>&mdash; roll one 6-sided dice</li>
+          <li><strong>2d6</strong>&mdash; roll two 6-sided dice</li>
+          <li><strong>3d6</strong>&mdash; roll three 6-sided dice</li>
+          <li><strong>4d6</strong>&mdash; roll four 6-sided dice</li>
+          <li><strong>Automatic Success</strong></li>
+        </ol>
         <ul>
-          <li>Unscathed</li>
-          <li>Scratched</li>
-          <li>Wounded</li>
-          <li>Maimed</li>
-          <li>Critical</li>
-          <li>Dead</li>
+          <li>The highest number rolled determines the roll result</li>
         </ul>
       </div>
       <div class="col-md-3">
-        <p><strong>Distance (Reach)</strong></p>
-        <ul>
-          <li>Grappling</li>
-          <li>Arms-length</li>
-          <li>Running</li>
-          <li>Ranged</li>
-          <li>Longshot</li>
-          <li>Out-of-sight</li>
-        </ul>
+        <h4>Roll Results</h4>
+        <ol>
+          <li><strong>Critical Failure</strong>&mdash; <em>and</em> something else goes terribly wrong</li>
+          <li><strong>Standard Failure</strong></li>
+          <li><strong>Marginal Failure</strong>&mdash; <em>but</em> not all is lost</li>
+          <li><strong>Marginal Success</strong>&mdash; <em>but</em> there's a catch</li>
+          <li><strong>Standard Success</strong></li>
+          <li><strong>Critical Success</strong>&mdash; <em>and</em> something else incredible happens</li>
+        </ol>
+      </div>
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Skill Check Lookup</th>
+              <th>Inept</th>
+              <th>Novice</th>
+              <th>Veteran</th>
+              <th>Heroic</th>
+              <th>Master</th>
+              <th>Legendary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Easy</th>
+              <td>2d6</td>
+              <td>3d6</td>
+              <td>4d6</td>
+              <td class="success">Success</td>
+              <td class="success">Success</td>
+              <td class="success">Success</td>
+            </tr>
+            <tr>
+              <th>Normal</th>
+              <td>1d6</td>
+              <td>2d6</td>
+              <td>3d6</td>
+              <td>4d6</td>
+              <td class="success">Success</td>
+              <td class="success">Success</td>
+            </tr>
+            <tr>
+              <th>Challenging</th>
+              <td class="danger">Failure</td>
+              <td>1d6</td>
+              <td>2d6</td>
+              <td>3d6</td>
+              <td>4d6</td>
+              <td class="success">Success</td>
+            </tr>
+            <tr>
+              <th>Hard</th>
+              <td class="danger">Failure</td>
+              <td class="danger">Failure</td>
+              <td>1d6</td>
+              <td>2d6</td>
+              <td>3d6</td>
+              <td>4d6</td>
+            </tr>
+            <tr>
+              <th>Rigorous</th>
+              <td class="danger">Failure</td>
+              <td class="danger">Failure</td>
+              <td class="danger">Failure</td>
+              <td>1d6</td>
+              <td>2d6</td>
+              <td>3d6</td>
+            </tr>
+            <tr>
+              <th>Near Impossible</th>
+              <td class="danger">Failure</td>
+              <td class="danger">Failure</td>
+              <td class="danger">Failure</td>
+              <td class="danger">Failure</td>
+              <td>1d6</td>
+              <td>2d6</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td class="text-center" colspan="7">
+              <small><em>Use the chart above to determine the type of roll depending on task difficulty and skill proficiency</em></small>
+            </td>
+          </tfoot>
+        </table>
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="text-center">Other Considerations</h3>
+      <div class="col-md-3">
+        <h4>Equipment</h4>
+        <p>Player characters are presumed to start with all equipment relevant to their skills. When in doubt, ask the narrator. If equipment is lost, the narrator should determine how it affects the character.</p>
       </div>
       <div class="col-md-3">
-        <p><strong>Size</strong></p>
-        <ul>
+        <h4>Leveling Up</h4>
+        <p>At the narrators discretion, when a player critically succeeds with a skill, that skill may permanently increase in proficiency. It's recommended to keep this at once per player, per session.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>Player Knowledge</h4>
+        <p>Your characters only exist in the world of your adventure. When role-playing them keep your knowledge separate from theirs. They don't necessarily know they failed to scan a room for traps.</p>
+      </div>
+      <div class="col-md-3">
+        <h4>6&deg; of State</h4>
+        <p>In lieu of tracking exact values like points or distance, MURPS is meant to abstract the top level states that actually affect situations. For example, the degrees of proficiency and difficulty.</p>
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="text-center">Additional Degrees of State</h3>
+      <div class="col-md-2">
+        <h4>Size</h4>
+        <ol>
           <li>Tiny</li>
           <li>Small</li>
           <li>Medium</li>
           <li>Large</li>
           <li>Gigantic</li>
           <li>Collosal</li>
-        </ul>
+        </ol>
       </div>
-      <div class="col-md-3">
-        <p><strong>Time of Day</strong></p>
-        <ul>
+      <div class="col-md-2">
+        <h4>Health</h4>
+        <ol>
+          <li>Unscathed</li>
+          <li>Bruised</li>
+          <li>Wounded</li>
+          <li>Maimed</li>
+          <li>Critical</li>
+          <li>Dead</li>
+        </ol>
+      </div>
+      <div class="col-md-2">
+        <h4>Reach</h4>
+        <ol>
+          <li>Grappling</li>
+          <li>Arms-length</li>
+          <li>Running</li>
+          <li>Ranged</li>
+          <li>Longshot</li>
+          <li>Out-of-sight</li>
+        </ol>
+      </div>
+      <div class="col-md-2">
+        <h4>Time of Day</h4>
+        <ol>
           <li>Dawn</li>
           <li>Morning</li>
           <li>Mid-day</li>
           <li>Afternoon</li>
           <li>Dusk</li>
           <li>Night</li>
-        </ul>
+        </ol>
       </div>
-    </div>
-    <h3>Optional Mechanics</h3>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Inspiration</h2>
-        <p>Whenever the Narrator observes a Player role-playing in a creative or amusing way, he or she may award the Player an Inspiration point (either recorded or in the form of a token). The Narrator could allow Players to redeem Inspiration points for effects that include (but are not limited to):</p>
-        <ul>
-          <li><strong>Re-Roll</strong> - A Player may re-roll an entire roll outright</li>
-          <li><strong>Roll modifier (pool)</strong> - Add or remove a die from the pool</li>
-          <li><strong>Roll modifier (result)</strong> - Increase or decrese the roll result by one</li>
-          <li><strong>Creative License</strong> - A Player may embelish the current scenario with additional details</li>
-        </ul>
+      <div class="col-md-2">
+        <h4>Temperature</h4>
+        <ol>
+          <li>Sub-zero</li>
+          <li>Freezing</li>
+          <li>Cold</li>
+          <li>Warm</li>
+          <li>Hazy</li>
+          <li>Molten</li>
+        </ol>
       </div>
+      <div class="col-md-2">
+        <h4>Feelings</h4>
+        <ol>
+          <li>Love</li>
+          <li>Like</li>
+          <li>Friendly</li>
+          <li>Annoy</li>
+          <li>Dislike</li>
+          <li>Hate</li>
+        </ol>
+      </div>
+      <div class="clearfix"></div>
+  </div>
+  <footer>
+    <div class="col-md-12  disclaimer text-center">
+      <small>MURPS is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC</a>. The MURPS.org source code is licensed under <a href="http://opensource.org/licenses/mit-license.html">MIT</a>. Questions or comments? <a href="mailto:jesse@murps.org">Let me know</a>.</small>
     </div>
-    <footer>
-      <div class="col-md-12">
-        <p>MURPS is licensed under <a href="http://creativecommons.org/licenses/by/4.0/">CC</a>. This site is licensed under <a href="http://opensource.org/licenses/mit-license.html">MIT</a>. Questions or comments? <a href="mailto:jesse@murps.org">Contact us</a>.</p>
-      </div><!-- /.container -->
-    </footer>
-  </body>
+    <div class="clearfix"></div>
+    <h4 class="text-center">Made with &#9829; by <a href="http://twitter.com/jesseflorig">Jesse</a></h4>
+  </footer>
+</body>
 </html>
